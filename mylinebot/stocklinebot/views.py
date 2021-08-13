@@ -57,9 +57,9 @@ def callback(request):
 
             text=event.message.text
             
-            if(text.lower()=='me'):
+            if(text.lower()=='你好'):
                 message_text(event)
-            else : 
+            elif(text.lower() in twstock.twse) : 
                 content = ''
 
                 stock_rt = twstock.realtime.get(text)
@@ -90,6 +90,11 @@ def callback(request):
                     event.reply_token,
                     TextSendMessage(text=content)
                 )
+            else :           
+                line_bot_api.reply_message(
+                    event.reply_token,
+                    TextSendMessage(text='非台股上市公司')
+                )
         return HttpResponse()
     else:
         return HttpResponseBadRequest()
@@ -99,5 +104,5 @@ def callback(request):
 def message_text(event):
     line_bot_api.reply_message(
         event.reply_token,
-        TextSendMessage(text=event.message.text)
+        TextSendMessage(text=event)
     )
