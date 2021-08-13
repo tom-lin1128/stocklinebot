@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-#aj)h^x(_i23ck+ix&31)g5=ose5_l6y1b*@4&5mh!&2qkl30+
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'f17736fec262.ngrok.io'
+    '78d6a9516f05.ngrok.io'
 ]
 
 
@@ -127,5 +127,5 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-LINE_CHANNEL_ACCESS_TOKEN = 'aPKHdnC7RxVXWEMBEoJ08TO0EAFqeUrtLPbB58fBgJUTUh6YQOaiZ5zGnja64lhCevoPbgXW8tiHpOgxOYmsaELmF/H97U8NolcRxEBbAQsUJmZ8RrPwODedHzK0nLqw6zvGySzhIMYFzW9/UVEtWQdB04t89/1O/w1cDnyilFU='
-LINE_CHANNEL_SECRET = '7df90a06b78bf197049f28e21c759a00'
+LINE_CHANNEL_ACCESS_TOKEN = 'VhdGQu8tSttV0efVvEY09UTcEqRh5XsBLcom/WezzBZncKu4gjOmzBzrwx7kNa+TkPX+RYT1EiAy+NeE6q5p5WkAYMLkVzlTe5lwKa1PeJcJFeJXb3ft1++sTOju2pdGN4DhzHUITZOWL2J8X7YvewdB04t89/1O/w1cDnyilFU='
+LINE_CHANNEL_SECRET = '4eeed9db999545f557100c0de784bd71'
